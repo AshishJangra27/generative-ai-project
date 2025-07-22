@@ -2,9 +2,6 @@
 
 This project walks you through building a smart article search engine that can **understand your question**, **search thousands of technical articles**, and give you a relevant, natural-language answer using **Google Gemini**.
 
-## 🔗 Run in Google Colab
-
-You can try this project directly in Colab:
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1p1nZFV0NI9rSIkmD_p3lDFeNvf_tFtYo?usp=sharing)
 
 
