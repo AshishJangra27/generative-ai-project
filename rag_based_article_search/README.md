@@ -1,107 +1,113 @@
 # RAG-based Article Search Engine
 
-This project demonstrates how to build a smart, AI-powered article search system using a **Retrieval-Augmented Generation (RAG)** pipeline. It combines **semantic search** (via vector embeddings and Pinecone) with **contextual question answering** powered by **Google Gemini**.
+This project walks you through building a smart article search engine that can **understand your question**, **search thousands of technical articles**, and give you a relevant, natural-language answer using **Google Gemini**.
+
+It uses the power of **Retrieval-Augmented Generation (RAG)** by combining:
+- **Semantic search** (using embeddings + Pinecone)
+- **LLM-based answering** (via Gemini with real context)
 
 ---
 
-## 📌 Project Highlights
+## 📌 What This Project Can Do
 
-- 🔍 Perform semantic search over 49,000+ GeeksforGeeks articles  
-- 🧠 Generate high-quality embeddings using Transformer or Qwen models  
-- 🗃️ Store and query vectors using Pinecone  
-- 💬 Answer questions in natural language using Gemini LLM  
-- 💡 Easily extendable to other domains and datasets  
+- Search across 49,000+ articles using vector similarity  
+- Understand and embed article content using transformer models  
+- Store and retrieve data efficiently using Pinecone  
+- Answer questions with Gemini based on top-matching articles  
+- Adapt easily to other datasets or domains  
 
 ---
 
-## 📁 Dataset Overview
+## 📁 About the Dataset
 
-- **Source**: Technical articles from GeeksforGeeks  
-- **Total Records**: 49,328  
+- **Size**: 49,328 rows  
 - **Columns**:
-  - `title`: The topic of the article  
-  - `article`: Full article content  
+  - `title`: Title of the article  
+  - `article`: The full content of the article  
 
 ---
 
-## 🛠️ Setup Instructions
+## 🛠️ Getting Started
 
-### 1. Clone the Dataset
-```bash
+### Step 1: Clone the dataset
+```
 !git clone https://github.com/AshishJangra27/datasets/
 ```
 
-### 2. Install Dependencies
-```bash
+### Step 2: Install the required packages
+```
 !pip install pinecone google-generativeai transformers
 ```
 
 ---
 
-## 🚀 Workflow
+## 🚀 How It Works
 
-### 1. **Data Preparation**
-- Load and merge all article CSVs
-- Convert the data into a single `articles.json` file
+### 1. Data Preparation
+- Combine all article CSVs  
+- Convert them to a clean JSON file: `articles.json`  
 
-### 2. **Embedding Generation**
+### 2. Generate Embeddings
 - Use either:
-  - `all-MiniLM-L6-v2` from Sentence Transformers
-  - `Qwen3-Embedding-0.6B` from Qwen
-- Convert each article into a dense vector and save to `article_embeddings.json`
+  - `all-MiniLM-L6-v2` (lightweight transformer)
+  - `Qwen3-Embedding-0.6B` (powerful multilingual model)
+- Save outputs to `article_embeddings.json`
 
-### 3. **Pinecone Vector Index**
-- Initialize Pinecone client with API key  
-- Create a `vector-db` index (dimension: 384, metric: cosine)  
-- Batch upload vectors with truncated article metadata
+### 3. Store in Pinecone
+- Connect to Pinecone with your API key  
+- Create a `vector-db` index with cosine similarity  
+- Upload article embeddings in batches  
 
-### 4. **Semantic Search**
-- Embed the user’s query using the same model
-- Search for top-k similar articles in Pinecone
-- Retrieve their metadata (article text)
+### 4. Search & Retrieve
+- Convert your query to an embedding  
+- Use Pinecone to find top matching articles  
+- Grab their content as context  
 
-### 5. **Gemini Answering**
-- Pass the retrieved content + question to Gemini
-- Use `gemini-1.5-flash` to generate an answer based on context
-- Display the answer and token usage
+### 5. Ask Gemini
+- Feed the context and your question to Gemini  
+- Get a direct, LLM-generated answer  
+- See token usage for transparency  
 
 ---
 
-## 💬 Example
+## 💬 Quick Example
 
-```python
-q = "What is GAN?"
-response = answer_with_gemini(q)
+```
+query = "What is GAN?"
+response = answer_with_gemini(query)
 print(response.text)
 ```
 
 ---
 
-## 📦 Output Files
+## 📂 Output Files
 
-- `data.csv`: Merged article data  
-- `articles.json`: JSON-formatted article content  
-- `article_embeddings.json`: Embeddings with metadata  
-- `article_embeddings_qwen.json`: Optional Qwen-based embeddings  
-
----
-
-## 📈 Use Cases
-
-- Build internal knowledge assistants  
-- Develop educational bots  
-- Create GenAI-based document search engines  
-- Extend for multilingual or domain-specific content
+- `data.csv`: Combined article data  
+- `articles.json`: Clean article content  
+- `article_embeddings.json`: Vector representations  
+- `article_embeddings_qwen.json`: Alternative Qwen embeddings  
 
 ---
 
-## ✅ Conclusion
+## 💡 Use It For
 
-This notebook provides a complete, working example of how to combine semantic search with large language models. With minimal customization, it can be scaled into a production-ready assistant or integrated into web applications.
+- AI-powered knowledge assistants  
+- Educational bots for coding content  
+- Internal document search  
+- Prototyping GenAI search tools  
 
 ---
 
-## 📌 Credits
+## ✅ Final Thoughts
 
-Built by [Ashish Jangra](https://github.com/AshishJangra27)  
+You now have a full GenAI-powered system:  
+A smart search engine that retrieves and explains article content like a human.
+
+With just a few changes, you can plug in your own dataset, scale it, or build an app on top of it.
+
+---
+
+## 👤 Credits
+
+Made with ❤️ by [Ashish Jangra](https://github.com/AshishJangra27)  
 Powered by: Pinecone, Google Gemini, HuggingFace Transformers
