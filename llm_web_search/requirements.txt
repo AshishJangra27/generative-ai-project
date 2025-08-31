@@ -1,0 +1,14 @@
+requests
+dotenv
+bs4
+python-dotenv
+streamlit
+google-generativeai
+requests
+beautifulsoup4
+python-dotenv
+google-generativeai
+streamlit
+numpy<2
+
+
