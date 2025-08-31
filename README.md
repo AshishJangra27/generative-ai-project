@@ -3,15 +3,6 @@
 A collection of three powerful AI-powered search and retrieval systems, each demonstrating different approaches to intelligent information retrieval and question answering.
 
 ## Projects
-
-| Project                          | Link                                                                                       |
-|----------------------------------|-------------------------------------------------------------------------------------------|
-| advanced_rag_based_article_search | [View](https://github.com/AshishJangra27/generative-ai-project/tree/main/advanced_rag_based_article_search) |
-| llm_web_search                   | [View](https://github.com/AshishJangra27/generative-ai-project/tree/main/llm_web_search)  |
-| rag_based_article_search         | [View](https://github.com/AshishJangra27/generative-ai-project/tree/main/rag_based_article_search) |
-
-
-
 ### 1. **LLM Web Search** `/llm_web_search/`
 Real-time web search with AI-powered answers using live content from the internet.
 
