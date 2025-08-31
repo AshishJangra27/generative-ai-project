@@ -30,8 +30,8 @@ llm_web_search/
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd llm_web_search
+   git clone [<repository-url>](https://github.com/AshishJangra27/generative-ai-project)
+   cd generative-ai-project/llm_web_search
    ```
 
 2. **Create virtual environment**
