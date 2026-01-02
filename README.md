@@ -1,8 +1,11 @@
 # Generative AI Project Suite
 
-A collection of three powerful AI-powered search and retrieval systems, each demonstrating different approaches to intelligent information retrieval and question answering.
+A collection of four powerful AI-powered search and retrieval systems, each demonstrating different approaches to intelligent information retrieval, data querying, and question answering.
+
+
 
 ## Projects
+
 ### 1. **LLM Web Search** `/llm_web_search/`
 Real-time web search with AI-powered answers using live content from the internet.
 
@@ -18,6 +21,8 @@ Real-time web search with AI-powered answers using live content from the interne
 
 ### 2. **RAG-based Article Search** `/rag_based_article_search/`
 Semantic search over 49K+ technical articles using vector embeddings and Pinecone.
+
+
 
 **Features:**
 - Vector similarity search
@@ -40,16 +45,36 @@ Enhanced RAG pipeline with intelligent chunking and ChromaDB for local vector st
 
 **Tech Stack:** `LlamaIndex` • `ChromaDB` • `Gemini` • `SentenceTransformers`
 
+---
+
+### 4. **Text-to-SQL via Prompt Engineering** `/text_to_sql_prompt_engineering/`
+A natural language interface for relational databases that translates plain English into precise SQL queries.
+
+
+
+**Features:**
+- Natural language understanding for data queries
+- Automatic schema context injection for accurate results
+- Support for complex multi-table JOINs and filtering
+- Conversational data insights generated from query results
+
+**Tech Stack:** `Gemini` • `SQLite` • `SQL` • `Prompt Engineering`
+
+---
+
 ## Use Cases
 
-- **Knowledge Assistants** for enterprise documentation
-- **Educational Tools** for technical content search
-- **Research Helpers** for information gathering
-- **Chatbots** with domain-specific knowledge
+- **Internal Data Bots** for querying company databases without SQL knowledge
+- **Knowledge Assistants** for enterprise documentation and wikis
+- **Educational Tools** for technical content search and SQL learning
+- **Research Helpers** for real-time information gathering from the web
 
 ## 🛠️ Quick Start
 
-Each project includes detailed setup instructions in their respective README files. All projects use Google Gemini for AI responses and require appropriate API keys.
+Each project includes detailed setup instructions in their respective folders. To get started, you will generally need to:
+1. Obtain a Google AI Studio API key for Gemini.
+2. Set up relevant environment variables for database connections (Pinecone, Serper, etc.).
+3. Run the provided Jupyter notebooks or Streamlit applications.
 
 ## 👤 Author
 
