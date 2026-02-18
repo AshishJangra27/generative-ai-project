@@ -136,5 +136,5 @@ This forms the foundation for building advanced tools like:
 
 ## 👤 Credits
 
-Made with ❤️ by Ashish Jangra  
+Made with ❤️ by [Ashish Jangra](https://github.com/AshishJangra27)  
 Powered by Google Gemini API
