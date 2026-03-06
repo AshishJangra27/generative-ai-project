@@ -3,6 +3,7 @@
 This project walks you through building a smart article search engine that can **understand your question**, **search thousands of technical articles**, and give you a relevant, natural-language answer using **Google Gemini**.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1p1nZFV0NI9rSIkmD_p3lDFeNvf_tFtYo?usp=sharing)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1YvFpPm07dR2hmwM_nbZC_y2u26uxiLZW?usp=sharing)
 
 
 It uses the power of **Retrieval-Augmented Generation (RAG)** by combining:
