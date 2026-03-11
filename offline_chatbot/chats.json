@@ -1,0 +1,13 @@
+{"chat1": 
+    [{"role": "user", "content": "hi"}, 
+    {"role": "assistant", "content": "How can I assist you today?"}, 
+    {"role": "user", "content": "you say?"}], 
+
+"chat2": [],
+
+"chat3": 
+[{"role": "user", "content": "hi"}, 
+{"role": "assistant", "content": "How can I assist you today?"}, 
+{"role": "user", "content": "tell em about ww1"}], 
+
+"chat4": []}
