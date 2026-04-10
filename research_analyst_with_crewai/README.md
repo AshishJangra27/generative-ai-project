@@ -4,7 +4,7 @@ This project demonstrates how different **CrewAI configurations** impact the qua
 
 The objective is to understand how **agent capability, tool usage, and collaboration** influence output depth and accuracy.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ikKG_qTE2ZW768peSkkD_r8lQF1dXmhQ?usp=sharing)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1QZgPpdXiZw-HzrTU4cmxJK7r07IALqI0?usp=sharing)
 
 ---
 
